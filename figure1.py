@@ -33,7 +33,7 @@ for idx,  tr in enumerate(st):
     plt.semilogx(f, 20.*np.log10(np.abs(amp)), linewidth=2, label=label)
 plt.legend(loc=8)
 plt.xlabel('Frequency (Hz)')
-plt.ylabel('Amplitude (dB rel. 1 $(m/s^2)^2$)')
+plt.ylabel('Amplitude (dB rel. 1 $(m/s)^2$)')
 plt.xlim((1./(24*60*60), 200.))
 per, nlnm = get_nlnm()
 per, nhnm = get_nhnm()
